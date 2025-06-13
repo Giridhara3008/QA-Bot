@@ -8,7 +8,7 @@ from utils.rag_chain import build_qa_chain
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-OPENAI_API_KEY="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"
+OPENAI_API_KEY="put your key"
 # Replace with your actual API key
 
 vectorstore = None
