@@ -25,15 +25,6 @@ A Flask web application that allows users to upload their resume in PDF format, 
 
 - Python 3.8 or higher
 - OpenAI API key (get from [OpenAI platform](https://platform.openai.com/account/api-keys))
-
-### Installation
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
-
 ## Project structure
 app.py                 # Main Flask app
 requirements.txt       # Python dependencies
@@ -56,10 +47,15 @@ This project successfully demonstrates how to build a Retrieval-Augmented Genera
 The Flask-based web interface makes it accessible and user-friendly, turning complex AI workflows into a seamless interactive experience.
 ## Knowlege Gained
 1.Understanding RAG (Retrieval-Augmented Generation): Learned how to enhance language model responses by retrieving contextually relevant documents from a vector store, improving accuracy and relevance.
+
 2.Working with Vector Embeddings: Gained hands-on experience creating, storing, and querying text embeddings using OpenAI’s embedding API and FAISS.
+
 3.PDF Text Extraction: Practiced extracting and preprocessing text from PDFs using PyMuPDF to prepare data for NLP tasks.
+
 4.Building a Full-Stack AI Application: Developed skills in integrating backend AI components with a Flask web app, handling file uploads, managing state, and serving dynamic responses.
+
 5.API Integration & Error Handling: Managed third-party API integration (OpenAI) including API key management, error diagnosis, and retry logic.
+
 6.Python Modularization & Code Organization: Improved structuring code into reusable modules (pdf_reader.py, vector_store.py, rag_chain.py), which enhances maintainability.
 
 7.This project is a solid foundation for building more advanced AI-powered document QA systems applicable in recruiting, legal, healthcare, and many other domains.
