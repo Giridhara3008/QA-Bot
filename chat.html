@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Resume Q&A Chat</title>
+</head>
+<body>
+    <h2>Ask Questions About the Resume</h2>
+    <input id="question" type="text" placeholder="Enter your question here" />
+    <button onclick="askQuestion()">Ask</button>
+
+    <div id="response"></div>
+
+    <script>
+        async function askQuestion() {
+            const question = document.getElementById('question').value;
+            const res = await fetch('/ask', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ question })
+            });
+            const data = await res.json();
+            document.getElementById('response').innerText = data.answer;
+        }
+    </script>
+</body>
+</html>

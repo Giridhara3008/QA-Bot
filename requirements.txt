@@ -1,0 +1,6 @@
+Flask
+openai
+PyMuPDF
+langchain
+faiss-cpu
+langchain-community
